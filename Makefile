@@ -13,6 +13,11 @@ install-aws:
 install-amazon-linux:
 	pip install --upgrade pip &&\
 		pip install -r amazon-linux.txt
+
+install-azure:
+	pip install --upgrade pip &&\
+		pip install -r requirements_azure.txt
+
 lint:
 	pylint --disable=R,C hello.py
 
